@@ -5,7 +5,7 @@
     --a_hover_color: royalblue;
     --background_color: #1c1c1c;
     --nav_active_color: rgb(102, 116, 157);
-    --nav_background_color: rgb(151, 62, 62);
+    /* --nav_background_color: rgb(151, 62, 62); */
     --nav_font_color: aliceblue;
 }
 body {
@@ -28,7 +28,7 @@ ul.nav {
     justify-content: center; /* Centers the list items (links) horizontally */
     align-items: center; /* Centers the items vertically */
     border-radius: 30px;
-    border: 3px solid;
+    /* border: 3px solid; */
     margin-top: 5px; /* Creates the space from the top of the screen */
     width: 70%; /* Adjust this percentage to control the length of the colored bar */
     left: 0;
