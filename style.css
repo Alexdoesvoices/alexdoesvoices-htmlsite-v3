@@ -7,7 +7,6 @@
     --nav_active_color: rgb(102, 116, 157);
     --nav_background_color: rgb(151, 62, 62);
     --nav_font_color: aliceblue;
-    --nav_side_margins: 20px;
 }
 body {
     background-color: var(--background_color);
