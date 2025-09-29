@@ -1,4 +1,8 @@
 :root {
+    --a_entry_heights: 40px;
+    --a_entry_top_margin: 15px;
+    --a_entry_width: 400px;
+    --a_hover_color: royalblue;
     --background_color: #1c1c1c;
     --nav_active_color: rgb(102, 116, 157);
     --nav_background_color: rgb(151, 62, 62);
@@ -10,23 +14,34 @@ body {
     margin: 0;
     padding: 0;
 }
-a:hover {
-    color: var(--nav_active_color);
-}
 ul.nav {
+      /* 1. Reset and Fixing */
     list-style-type: none;
     margin: 0;
     padding: 0;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; /* Ensures the fixed container spans the whole screen */
+    z-index: 1000;
+    /* 2. Styling (Preserving your original intent) */
+    background-color: var(--nav_background_color); 
     overflow: hidden;
-    background-color: var(--nav_background_color);
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-    width: 100p;
+    /* 3. Centering the Content (The Links) */
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers the list items (links) horizontally */
+    align-items: center; /* Centers the items vertically */
+    /* 4. Shape and Spacing (Preserving your original intent) */
     border-radius: 30px;
-    margin-left: var(--nav_side_margins);
-    margin-right: var(--nav_side_margins);
     border: 3px solid;
+    margin-top: 5px; /* Creates the space from the top of the screen */
+    /* 5. Horizontal Centering of the Colored Bar Itself */
+    /* This uses a defined width and auto margins to center the block within the 100% fixed container */
+    width: 70%; /* Adjust this percentage to control the length of the colored bar */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 li.nav {
     float: left;
@@ -47,7 +62,40 @@ li.nav a:hover {
     border: 2px solid;
     border-radius: 30px;
 }
-h1.center, h2.center, h3.center {
-    color: white;
+div.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    min-height: calc(60vh - 70px);
+}
+a.entry{
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: .2px solid;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    height: var(--a_entry_heights);
+    line-height: var(--a_entry_heights);
+    margin-top: var(--a_entry_top_margin);
     text-align: center;
+    text-decoration: none;
+    width: var(--a_entry_width)
+}
+hr.entry {
+    margin-top: var(--a_entry_top_margin);
+    margin-bottom: calc(var(--a_entry_top_margin) - 10px );
+    width: var(--a_entry_width)
+}
+a:hover.entry {
+    color: var(--a_hover_color)
+}
+img.homeframe {
+    max-width: 350px; 
+    max-height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid;
+    margin-bottom: 20px 
 }
