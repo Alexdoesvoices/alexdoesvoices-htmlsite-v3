@@ -117,3 +117,16 @@ ul.equipment_list {
     width: var(--a_entry_width);
     text-align: justify;
 }
+p.stickyheader {
+    background-color: aliceblue;
+    border: 4px solid;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: -50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: -webkit-sticky;
+    text-align: center;
+    margin-top: 60px;
+}
