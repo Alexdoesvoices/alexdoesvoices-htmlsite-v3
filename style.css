@@ -7,9 +7,7 @@
     --list_background_color: aliceblue;
     --nav_active_color: rgb(102, 116, 157);
     --nav_font_color: aliceblue;
-    --nav_background_color: rgb(42, 161, 147);
-}
-body {
+    --nav_background_color: royalblue;
     background-color: var(--background_color);
     margin: 0;
     padding: 0;
@@ -62,7 +60,7 @@ li.nav a {
     text-decoration: none;
 }
 li.nav a:hover {
-    background-color: var(--nav_background_color);
+    /* background-color: var(--nav_background_color); */
     /* border-color: var(--nav_background_color); */
 }
 .nav_active {
@@ -75,7 +73,7 @@ div.center {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 75px;
     min-height: calc(60vh - 70px);
 }
 a.list_link{
