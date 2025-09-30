@@ -18,26 +18,45 @@ ul.nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: fixed; 
+    position: fixed;
     top: 0;
-    left: 0; 
     z-index: 1000;
-    background-color: var(--nav_background_color); 
-    overflow: hidden;
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers the list items (links) horizontally */
-    align-items: center; /* Centers the items vertically */
-    border-radius: 30px;
+    background-color: var(--nav_background_color);
     border: 3px solid;
-    margin-top: 5px; /* Creates the space from the top of the screen */
-    width: 70%; /* Adjust this percentage to control the length of the colored bar */
+    margin-top: 5px; /* Creates space from the top of the screen */
+    width: 100%; /* Takes up full screen width for scrolling */
     left: 0;
     right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0; /* Overrides auto-margins for full width */
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Prevents accidental vertical scroll */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    display: flex;
+    justify-content: flex-start; /* Links start from the left, necessary for scrolling */
+    align-items: center;
+    flex-wrap: nowrap; /* Forces all items onto a single line */
+    border-radius: 30px; /* Remove rounded corners for a clean edge-to-edge bar */
+}
+@media (min-width: 768px) {
+    ul.nav {
+        /* Override mobile width and centering */
+        width: 80%; /* Adjust this percentage or use a fixed pixel value (e.g., 600px) */
+        margin-left: auto;
+        margin-right: auto;
+        
+        /* Re-enable original styling for desktop */
+        border-radius: 30px; 
+        
+        /* Disable scrolling and re-center the links inside the bar */
+        overflow-x: hidden;
+        justify-content: center; /* Center the links within the 80% width bar */
+    }
+}   }
 }
 li.nav {
     float: left;
+    flex-shrink: 0;
 }
 li.nav a {
     display: block;
