@@ -7,7 +7,7 @@
     --list_background_color: aliceblue;
     --nav_active_color: rgb(102, 116, 157);
     --nav_font_color: aliceblue;
-    /* --nav_background_color: rgb(151, 62, 62); */
+    --nav_background_color: rgb(42, 161, 147);
 }
 body {
     background-color: var(--background_color);
