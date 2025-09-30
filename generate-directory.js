@@ -19,11 +19,7 @@ const placeholder = '<!-- DIRECTORY_LIST_PLACEHOLDER -->';
 // Define custom labels for specific filenames.
 // The key should be the filename (e.g., 'index.html') and the value is the desired label (e.g., 'Home').
 const customLabels = {
-    'index.html': 'Home',
-    'github_projects.html': 'Github Projects (External)',
-    'configs.html': 'Configs Repository (External)',
-    'github_profile.html': 'Github Profile (External)',
-    'nba.html': 'NBA Season Countdown'
+    'index.html': 'Home'
 };
 
 // --- Helper Function for Formatting ---

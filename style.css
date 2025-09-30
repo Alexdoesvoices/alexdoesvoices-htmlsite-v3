@@ -128,7 +128,7 @@ ul.equipment_list {
     border: 2px solid;
     width: fit-content;
     margin: auto;
-    width: var(--a_list_width);
+    width: 400px;
     text-align: justify;
 }
 p.stickyheader {
