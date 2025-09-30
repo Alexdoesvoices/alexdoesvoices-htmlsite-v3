@@ -21,7 +21,6 @@ ul.nav {
     position: fixed; 
     top: 0;
     left: 0; 
-    width: 100%; /* Ensures the fixed container spans the whole screen */
     z-index: 1000;
     background-color: var(--nav_background_color); 
     overflow: hidden;
@@ -31,7 +30,7 @@ ul.nav {
     border-radius: 30px;
     border: 3px solid;
     margin-top: 5px; /* Creates the space from the top of the screen */
-    width: 70%; /* Adjust this percentage to control the length of the colored bar */
+    width: 600px; /* Adjust this percentage to control the length of the colored bar */
     left: 0;
     right: 0;
     margin-left: auto;
