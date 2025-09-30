@@ -34,7 +34,7 @@ ul.nav {
     padding: 0;
     position: fixed;
     right: 0;
-    top: 1px;
+    top: 5px;
     width: 99%;
     z-index: 1000;
 }
@@ -45,7 +45,8 @@ ul.nav {
         margin-right: auto;
         border-radius: 30px; 
         overflow-x: hidden;
-        justify-content: center; 
+        justify-content: center;
+        top: 0;
     }   
 }
 li.nav {
