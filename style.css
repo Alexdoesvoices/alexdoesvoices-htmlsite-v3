@@ -1,7 +1,7 @@
 :root {
-    --a_entry_heights: 40px;
-    --a_entry_top_margin: 15px;
-    --a_entry_width: 400px;
+    --a_list_heights: 40px;
+    --a_list_top_margin: 15px;
+    --a_list_width: 400px;
     --a_hover_color: royalblue;
     --background_color: #1c1b22;
     --list_background_color: aliceblue;
@@ -78,29 +78,29 @@ div.center {
     margin-top: 70px;
     min-height: calc(60vh - 70px);
 }
-a.entry{
+a.list_link{
     background-color: aliceblue;
     border-radius: 5px;
     border: .2px solid;
     color: black;
     font-size: 25px;
     font-weight: bold;
-    height: var(--a_entry_heights);
-    line-height: var(--a_entry_heights);
-    margin-top: var(--a_entry_top_margin);
+    height: var(--a_list_heights);
+    line-height: var(--a_list_heights);
+    margin-top: var(--a_list_top_margin);
     text-align: center;
     text-decoration: none;
-    width: var(--a_entry_width)
+    width: var(--a_list_width)
 }
-hr.entry {
-    margin-top: var(--a_entry_top_margin);
-    margin-bottom: calc(var(--a_entry_top_margin) - 15px );
-    width: var(--a_entry_width)
+hr.list_line {
+    margin-top: var(--a_list_top_margin);
+    margin-bottom: calc(var(--a_list_top_margin) - 15px );
+    width: var(--a_list_width)
 }
-a:hover.entry {
+a:hover.list_link {
     color: var(--a_hover_color)
 }
-img.homeframe {
+img.imageframe {
     max-width: 350px; 
     max-height: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -128,7 +128,7 @@ ul.equipment_list {
     border: 2px solid;
     width: fit-content;
     margin: auto;
-    width: var(--a_entry_width);
+    width: var(--a_list_width);
     text-align: justify;
 }
 p.stickyheader {
