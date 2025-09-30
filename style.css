@@ -5,9 +5,13 @@
     --a_hover_color: royalblue;
     --background_color: #1c1b22;
     --list_background_color: aliceblue;
+    --list_font_color: black;
     --nav_active_color: rgb(102, 116, 157);
+    --nav_bar_desktop_width: 500px;
     --nav_font_color: aliceblue;
     --nav_background_color: royalblue;
+}
+body {
     background-color: var(--background_color);
     margin: 0;
     padding: 0;
@@ -38,7 +42,7 @@ ul.nav {
 }
 @media (min-width: 768px) { /*Nav Bar styling for desktop*/
     ul.nav {
-        width: 50%; 
+        width: var(--nav_bar_desktop_width);
         margin-left: auto;
         margin-right: auto;
         border-radius: 30px; 
@@ -50,6 +54,7 @@ ul.nav {
 li.nav {
     float: left;
     flex-shrink: 0;
+    /* background-color: var(--background_color); */
 }
 li.nav a {
     display: block;
@@ -114,8 +119,8 @@ div.equipment_center {
     min-height: calc(100vh - 70px);
 }
 div.equipment_list {
-    /* position: relative; */
     background-color: var(--list_background_color);
+    color: var(--list_font_color);
     border: 1px solid;
     font-size: 20px;
     margin: 10px;
