@@ -15,44 +15,38 @@ body {
     padding: 0;
 }
 ul.nav {
+    -webkit-overflow-scrolling: touch; 
+    align-items: center;
+    background-color: var(--nav_background_color);
+    border-radius: 30px; 
+    border: 3px solid;
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    left: 0;
     list-style-type: none;
+    margin-left: 0;
+    margin-right: 0; 
+    margin-top: 5px; 
     margin: 0;
+    overflow-x: scroll; 
+    overflow-y: hidden;
     padding: 0;
     position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--nav_background_color);
-    border: 3px solid;
-    margin-top: 5px; /* Creates space from the top of the screen */
-    width: 100%; /* Takes up full screen width for scrolling */
-    left: 0;
     right: 0;
-    margin-left: 0;
-    margin-right: 0; /* Overrides auto-margins for full width */
-    overflow-x: scroll; /* Enables horizontal scrolling */
-    overflow-y: hidden; /* Prevents accidental vertical scroll */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-    display: flex;
-    justify-content: flex-start; /* Links start from the left, necessary for scrolling */
-    align-items: center;
-    flex-wrap: nowrap; /* Forces all items onto a single line */
-    border-radius: 30px; /* Remove rounded corners for a clean edge-to-edge bar */
+    top: 0;
+    width: 99%;
+    z-index: 1000;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) { /*Nav Bar styling for desktop*/
     ul.nav {
-        /* Override mobile width and centering */
-        width: 80%; /* Adjust this percentage or use a fixed pixel value (e.g., 600px) */
+        width: 50%; 
         margin-left: auto;
         margin-right: auto;
-        
-        /* Re-enable original styling for desktop */
         border-radius: 30px; 
-        
-        /* Disable scrolling and re-center the links inside the bar */
         overflow-x: hidden;
-        justify-content: center; /* Center the links within the 80% width bar */
-    }
-}   }
+        justify-content: center; 
+    }   
 }
 li.nav {
     float: left;
@@ -114,10 +108,10 @@ img.homeframe {
 }
 div.equipment_center {
      display: flex;
-    align-items: center; /* Keep this to center horizontally */
+    align-items: center; 
     flex-direction: column;
     justify-content: flex-start; 
-    margin-top: 70px; /* Use the safe margin you set earlier (adjust if needed) */
+    margin-top: 70px; 
     min-height: calc(100vh - 70px);
 }
 div.equipment_list {
