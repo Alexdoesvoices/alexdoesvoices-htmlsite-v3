@@ -34,7 +34,7 @@ ul.nav {
     padding: 0;
     position: fixed;
     right: 0;
-    top: 0;
+    top: 1px;
     width: 99%;
     z-index: 1000;
 }
