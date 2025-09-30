@@ -4,9 +4,10 @@
     --a_entry_width: 400px;
     --a_hover_color: royalblue;
     --background_color: #1c1b22;
+    --list_background_color: aliceblue;
     --nav_active_color: rgb(102, 116, 157);
-    /* --nav_background_color: rgb(151, 62, 62); */
     --nav_font_color: aliceblue;
+    /* --nav_background_color: rgb(151, 62, 62); */
 }
 body {
     background-color: var(--background_color);
@@ -91,4 +92,28 @@ img.homeframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 3px solid;
     margin-bottom: 20px 
+}
+div.equipment_center {
+     display: flex;
+    align-items: center; /* Keep this to center horizontally */
+    flex-direction: column;
+    justify-content: flex-start; 
+    margin-top: 70px; /* Use the safe margin you set earlier (adjust if needed) */
+    min-height: calc(100vh - 70px);
+}
+div.equipment_list {
+    /* position: relative; */
+    background-color: var(--list_background_color);
+    border: 1px solid;
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+    width: fit-content;
+}
+ul.equipment_list {
+    border: 2px solid;
+    width: fit-content;
+    margin: auto;
+    width: var(--a_entry_width);
+    text-align: justify;
 }
