@@ -49,7 +49,7 @@ ul.nav {
         overflow-x: hidden;
         justify-content: center;
         top: 0;
-    }   
+    }
 }
 li.nav {
     float: left;
@@ -118,7 +118,7 @@ div.equipment_center {
     margin-top: 70px; 
     min-height: calc(100vh - 70px);
 }
-div.equipment_list {
+div.list {
     background-color: var(--list_background_color);
     color: var(--list_font_color);
     border: 1px solid;
@@ -133,6 +133,32 @@ ul.equipment_list {
     margin: auto;
     width: 400px;
     text-align: justify;
+}
+ul.list {
+    border: 2px solid;
+    width: fit-content;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+}
+li.inline {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+img.list {  /*Fav Games image styling for Mobile Device*/
+    width: 150px;
+    height: 150px;
+    display: block;
+}
+@media (min-width: 768px) { /*Fav Games Images styling for desktop*/
+    img.list {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
 }
 p.stickyheader {
     background-color: aliceblue;
