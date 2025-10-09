@@ -173,3 +173,13 @@ p.stickyheader {
     text-align: center;
     margin-top: 60px;
 }
+p.textbox {
+    background-color: aliceblue;
+    border: .2px solid;
+    width: 450px;
+    color: black;
+    display: block;
+    font-size: 25px;
+    /* font-weight: bold; */
+    text-align: center;
+}
