@@ -6,19 +6,21 @@ fetch('/nav.html')
     newelem.innerHTML = text;
     oldelem.parentNode.replaceChild(newelem, oldelem);
 
-    // After nav is loaded, highlight the active link
-    let currentPage = window.location.pathname.split("/").pop();
+    let currentPath = window.location.pathname;
 
-    // Handle case when no page is specified (just "/")
-    if (currentPage === "") {
-      currentPage = "index.html"; // Assume home page
-    }
+
+    let currentPage = currentPath.split("/").pop() || "index.html";
 
     let navLinks = document.querySelectorAll('ul.nav a');
 
     navLinks.forEach(link => {
-      let linkPage = link.getAttribute('href');
-      if (linkPage === currentPage) {
+      let linkHref = link.getAttribute('href');
+
+      // Normalize both link and current page paths
+      let normalizedLink = linkHref.replace(/^\/pages\//, '').replace(/^\//, '');
+      let normalizedPage = currentPage.replace(/^\/pages\//, '').replace(/^\//, '');
+
+      if (normalizedLink === normalizedPage) {
         link.classList.add('nav_active');
       }
     });
