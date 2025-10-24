@@ -11,10 +11,10 @@ const excludeListPath = path.join(__dirname, 'directory_exclude.json');
 const templatePath = path.join(__dirname, 'directory_template.html');
 
 // The path for the final, generated directory HTML file.
-const outputPath = path.join(__dirname, '/pages/directory.html');
+const outputPath = path.join(__dirname, '/p/directory.html');
 
 // The folder that will be scanned for .html files.
-const pagesDir = path.join(__dirname, '/pages');
+const pagesDir = path.join(__dirname, '/p');
 
 // The marker in the template where the list will be inserted.
 const placeholder = '<!-- DIRECTORY_LIST_PLACEHOLDER -->';
@@ -70,7 +70,7 @@ try {
     listItems += otherFiles.map(file => {
         const formattedName = formatFilename(file);
         // Links to /pages/filename.html
-        return `<li><a href="/pages/${file}">${formattedName}</a></li>`;
+        return `<li><a href="/p/${file}">${formattedName}</a></li>`;
     }).join('\n            ');
 
     // Step 6: Read the template HTML file.

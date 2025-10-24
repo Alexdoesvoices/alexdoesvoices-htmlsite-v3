@@ -17,8 +17,8 @@ fetch('/nav.html')
       let linkHref = link.getAttribute('href');
 
       // Normalize both link and current page paths
-      let normalizedLink = linkHref.replace(/^\/pages\//, '').replace(/^\//, '');
-      let normalizedPage = currentPage.replace(/^\/pages\//, '').replace(/^\//, '');
+      let normalizedLink = linkHref.replace(/^\/p\//, '').replace(/^\//, '');
+      let normalizedPage = currentPage.replace(/^\/p\//, '').replace(/^\//, '');
 
       if (normalizedLink === normalizedPage) {
         link.classList.add('nav_active');
